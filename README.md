@@ -78,7 +78,7 @@ graph
     1.  **Organism:** Choose a structure from your target organism or the closest evolutionary relative.
     2.  **Resolution:** Aim for **≤ 2.5 Å**. Lower is better.
     3.  **Bound Ligand:** Prioritize structures that already have an inhibitor or substrate bound in the active site. This is a **goldmine** for defining your grid box.
-- **Output:** A `.pdb` file (e.g., `3W4U.pdb`).
+- **Output:** A `.pdb` file (e.g., `Chitinase.pdb`).
 
 #### 1.2. Acquire Ligand Structures (The "Keys")
 - **Source:** PubChem ([https://pubchem.ncbi.nlm.nih.gov/](https://pubchem.ncbi.nlm.nih.gov/)).
