@@ -43,12 +43,9 @@ Before you begin, ensure you have the following software installed:
 The entire process can be summarized in the following flowchart. This provides a high-level view of the pipeline from start to finish.
 
 ```mermaid
-graph TD
-    A[Start] --> B["Acquire Protein Structure (.pdb)"]
-    B --> C["Acquire Ligand Structure (.sdf)"]
-    C --> D["Protein Preparation (ADT)"]
-    D --> E["Ligand Preparation (ADT)"]
-    E --> F["Define Grid Box (ADT)"]
+graph
+    A["Start: Acquire Protein Structure (.pdb) and Ligand Structure (.sdf)"] --> D["Protein and Ligand Preparation (ADT)"]
+    D --> F["Define Grid Box (ADT)"]
     F --> G["Create Config File (.txt)"]
     G --> H["Run AutoDock Vina"]
     H --> I["Analyze Log File (Affinity Scores)"]
@@ -56,19 +53,16 @@ graph TD
     J --> K["Generate Figures & Interpret"]
     K --> L[End]
 
-    subgraph Preparation
-        D; E; F;
-    end
-    subgraph Execution
-        G; H;
-    end
-    subgraph Analysis
-        I; J; K;
-    end
-
-    style Preparation fill:#e6f3ff,stroke:#0066cc
-    style Execution fill:#e6ffe6,stroke:#00cc66
-    style Analysis fill:#fff0e6,stroke:#ff9933
+    %% Your original color palette applied logically
+    style A fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style F fill:#ff9,stroke:#333,stroke-width:2px,color:#000
+    style G fill:#9ff,stroke:#333,stroke-width:2px,color:#000
+    style H fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style I fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style J fill:#ff9,stroke:#333,stroke-width:2px,color:#000
+    style K fill:#9ff,stroke:#333,stroke-width:2px,color:#000
+    style L fill:#f9f,stroke:#333,stroke-width:2px,color:#000
 ```
 
 ---
