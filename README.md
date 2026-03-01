@@ -95,7 +95,7 @@ AutoDockTools cannot read `.sdf` files directly.
 1.  **Open ADT** and `File > Read Molecule...` your protein `.pdb` file.
 2.  **Remove Unnecessary Components:**
     -   `Edit > Delete > Water`.
-    -   Delete any non-essential ligands/ions. **<span style="color:red;">CRITICAL:</span>** Keep essential cofactors (e.g., Copper in Tyrosinase, Zinc in NF-κB).
+    -   Delete any non-essential ligands/ions.
 3.  **Add Hydrogens:** `Edit > Hydrogens > Add > All`.
 4.  **Add Charges:** `Edit > Charges > Gasteiger`.
 5.  **Save:** `File > Save > Write PDBQT...` (e.g., `chitinase_prepared.pdbqt`).
