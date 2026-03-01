@@ -43,27 +43,32 @@ Before you begin, ensure you have the following software installed:
 The entire process can be summarized in the following flowchart. This provides a high-level view of the pipeline from start to finish.
 
 ```mermaid
-flowchart TD
-    A[Start] --> B[Acquire Protein Structure (.pdb)]
-    B --> C[Acquire Ligand Structure (.sdf)]
-    C --> D[Protein Preparation (ADT)]
-    D --> E[Ligand Preparation (ADT)]
-    E --> F[Define Grid Box (ADT)]
-    F --> G[Create Config File (.txt)]
-    G --> H[Run AutoDock Vina]
-    H --> I[Analyze Log File (Affinity Scores)]
-    I --> J[Visualize in PyMOL]
-    J --> K[Generate Figures & Interpret]
+graph TD
+    A[Start] --> B["Acquire Protein Structure (.pdb)"]
+    B --> C["Acquire Ligand Structure (.sdf)"]
+    C --> D["Protein Preparation (ADT)"]
+    D --> E["Ligand Preparation (ADT)"]
+    E --> F["Define Grid Box (ADT)"]
+    F --> G["Create Config File (.txt)"]
+    G --> H["Run AutoDock Vina"]
+    H --> I["Analyze Log File (Affinity Scores)"]
+    I --> J["Visualize in PyMOL"]
+    J --> K["Generate Figures & Interpret"]
     K --> L[End]
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px,color:#000
-    style B fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    style D fill:#ff9,stroke:#333,stroke-width:2px,color:#000
-    style E fill:#9f9,stroke:#333,stroke-width:2px,color:#000
-    style F fill:#f99,stroke:#333,stroke-width:2px,color:#000
-    style G fill:#9ff,stroke:#333,stroke-width:2px,color:#000
-    style H fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    subgraph Preparation
+        D; E; F;
+    end
+    subgraph Execution
+        G; H;
+    end
+    subgraph Analysis
+        I; J; K;
+    end
+
+    style Preparation fill:#e6f3ff,stroke:#0066cc
+    style Execution fill:#e6ffe6,stroke:#00cc66
+    style Analysis fill:#fff0e6,stroke:#ff9933
 ```
 
 ---
