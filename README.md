@@ -44,7 +44,7 @@ The entire process can be summarized in the following flowchart. This provides a
 
 ```mermaid
 graph
-    A["Start: Acquire Protein Structure (.pdb) and Ligand Structure (.sdf)"] --> D["Protein and Ligand Preparation (ADT)"]
+    A["Start: Acquire Protein (.pdb) and Ligand Structure (.sdf)"] --> D["Protein and Ligand Preparation (ADT)"]
     D --> F["Define Grid Box (ADT)"]
     F --> G["Create Config File (.txt)"]
     G --> H["Run AutoDock Vina"]
