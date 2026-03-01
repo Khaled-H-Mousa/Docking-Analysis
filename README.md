@@ -1,4 +1,4 @@
-# 🧬 Molecular Docking Analysis: A Definitive Protocol
+# 🧬 Molecular Docking Analysis: A Complete Protocol
 
 [![AutoDock](https://img.shields.io/badge/AutoDock-Tools-blue.svg)](http://autodock.scripps.edu/)
 [![AutoDock Vina](https://img.shields.io/badge/Vina-v1.2.3-brightgreen.svg)](http://vina.scripps.edu/)
