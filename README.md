@@ -7,7 +7,7 @@
 
 This repository provides a complete, step-by-step protocol for performing molecular docking analysis, from data acquisition to final visualization. It is designed to be a robust and reproducible guide for investigating the interaction between small molecule ligands and protein targets.
 
-This protocol was developed and validated for a study investigating the effects of **Kojic Acid** and **D-Limonene** on six key enzymes: Chitinase, Tyrosinase, Lipase, Catalase, Peroxidase, and NF-κB.
+This protocol was developed and validated for a study investigating the effects of **Kojic Acid** on Chitinase enzymes.
 
 ---
 
@@ -43,32 +43,7 @@ Before you begin, ensure you have the following software installed:
 The entire process can be summarized in the following flowchart. This provides a high-level view of the pipeline from start to finish.
 
 ```mermaid
-graph TD
-    A[Start] --> B[Acquire Protein Structure (.pdb)];
-    B --> C[Acquire Ligand Structure (.sdf)];
-    C --> D[Protein Preparation (ADT)];
-    D --> E[Ligand Preparation (ADT)];
-    E --> F[Define Grid Box (ADT)];
-    F --> G[Create Config File (.txt)];
-    G --> H[Run AutoDock Vina];
-    H --> I[Analyze Log File (Affinity Scores)];
-    I --> J[Visualize in PyMOL];
-    J --> K[Generate Figures & Interpret];
-    K --> L[End];
-
-    subgraph Preparation
-        D; E; F;
-    end
-    subgraph Execution
-        G; H;
-    end
-    subgraph Analysis
-        I; J; K;
-    end
-
-    style Preparation fill:#e6f3ff,stroke:#0066cc
-    style Execution fill:#e6ffe6,stroke:#00cc66
-    style Analysis fill:#fff0e6,stroke:#ff9933
+graph TD    A[Start] --> B[Acquire Protein Structure PDB]    B --> C[Acquire Ligand Structure SDF]    C --> D[Protein Preparation ADT]    D --> E[Ligand Preparation ADT]    E --> F[Define Grid Box ADT]    F --> G[Create Config File TXT]    G --> H[Run AutoDock Vina]    H --> I[Analyze Log File Scores]    I --> J[Visualize in PyMOL]    J --> K[Generate Figures & Interpret]    K --> L[End]    subgraph Preparation        D        E        F    end    subgraph Execution        G        H    end    subgraph Analysis        I        J        K    end    style Preparation fill:#e6f3ff,stroke:#0066cc,stroke-width:2px    style Execution fill:#e6ffe6,stroke:#00cc66,stroke-width:2px    style Analysis fill:#fff0e6,stroke:#ff9933,stroke-width:2px
 ```
 
 ---
