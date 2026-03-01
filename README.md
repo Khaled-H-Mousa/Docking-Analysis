@@ -88,8 +88,8 @@ graph
 
 #### 1.3. Convert Ligand to PDB (if needed)
 AutoDockTools cannot read `.sdf` files directly.
-- **Easiest Method:** Re-download the ligand from PubChem, but select **PDB** as the file format instead of SDF.
-- **Alternative Method:** Use Open Babel: `obabel -isdf ligand.sdf -opdb -O ligand.pdb -h`
+- **Easiest Method (Using PyMOL):** Open PyMOL, `File > Open...` your `.sdf` file, then `File > Save Molecule As...` and select the `PDB Files (*.pdb)` format. This keeps the workflow within your core toolkit.
+- **Alternative Method (Using Open Babel):** Use the command line for a quick conversion: `obabel -isdf ligand.sdf -opdb -O ligand.pdb -h`
 
 #### 1.4. Protein Preparation (Using AutoDockTools)
 1.  **Open ADT** and `File > Read Molecule...` your protein `.pdb` file.
