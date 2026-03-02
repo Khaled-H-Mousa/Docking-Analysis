@@ -12,16 +12,27 @@ This protocol was developed and validated for a study investigating the effects 
 ---
 
 ## 📑 Table of Contents
-1.  [Prerequisites](#prerequisites)
-2.  [Workflow Overview](#workflow-overview)
-3.  [Step-by-Step Protocol](#step-by-step-protocol)
+1.  [Introduction](#Introduction)
+2.  [Prerequisites](#prerequisites)
+3.  [Workflow Overview](#workflow-overview)
+4.  [Step-by-Step Protocol](#step-by-step-protocol)
     *   [Phase 1: Data Acquisition & Preparation](#phase-1-data-acquisition--preparation)
     *   [Phase 2: Docking Execution](#phase-2-docking-execution)
     *   [Phase 3: Analysis & Visualization](#phase-3-analysis--visualization)
-4.  [File Formats Explained](#file-formats-explained)
-5.  [Interpreting the Results](#interpreting-the-results)
-6.  [Troubleshooting & FAQ](#troubleshooting--faq)
-7.  [Citation](#citation)
+5.  [File Formats Explained](#file-formats-explained)
+6.  [Interpreting the Results](#interpreting-the-results)
+7.  [Troubleshooting & FAQ](#troubleshooting--faq)
+8.  [Citation](#citation)
+
+---
+
+## Introduction
+
+**Molecular Docking Overview**  
+Molecular docking is a computational method used in drug discovery and structural biology to predict how a small molecule (ligand) binds to a target protein (e.g., an enzyme). It finds the best binding pose and estimates binding strength using a scoring function — usually reported as binding energy (kcal/mol). More negative values mean stronger binding.  
+This technique helps explain:  
+- **Inhibition** — ligand blocks the active site.
+- **Activation/stimulation** — ligand enhances activity (e.g., via allosteric sites).
 
 ---
 
